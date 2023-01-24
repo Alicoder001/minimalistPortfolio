@@ -1,0 +1,20 @@
+.header {
+	padding: 6.4rem 0 5.4rem;
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__toggle {
+		display: none;
+		@include responsive(max-phone) {
+			display: block;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+.hidden {
+	display: none;
+}

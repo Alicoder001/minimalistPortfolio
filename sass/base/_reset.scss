@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	font-weight: 400;
+	font-size: $subtSize;
+	line-height: 1.88;
+	color: $subtColor;
+	font-family: $subtFamily;
+	background-color: $veryLight;
+}
+.container {
+	max-width: 119rem;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 4rem;
+	padding-right: 4rem;
+
+	@include responsive(max-phone) {
+		padding: 0 3.2rem;
+	}
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol {
+	list-style: none;
+}
+.main {
+	flex-grow: 1;
+}

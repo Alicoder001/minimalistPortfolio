@@ -1,0 +1,46 @@
+.footer {
+	background-color: $grayishDark;
+	padding: 2.4rem;
+	@include responsive(min-tablet) {
+		padding: 5.6rem;
+		margin-top: 8rem;
+	}
+	.container {
+		display: flex;
+		align-items: center;
+		@include responsive(min-tablet) {
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			align-items: center;
+			row-gap: 4rem;
+		}
+	}
+	&__img {
+		margin-right: 4.9rem;
+		@include responsive(min-tablet) {
+			margin-right: 0;
+		}
+	}
+	&__nav {
+		display: flex;
+		align-items: center;
+		column-gap: 4.2rem;
+		margin-right: auto;
+		@include responsive(min-tablet) {
+			flex-direction: column;
+			justify-content: center;
+			margin-right: 0;
+			row-gap: 3.2rem;
+		}
+	}
+	&__link {
+		color: white;
+	}
+	&__social {
+		display: flex;
+		column-gap: 1.6rem;
+		@include responsive(min-tablet) {
+		}
+	}
+}
